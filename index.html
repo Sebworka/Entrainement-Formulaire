@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="JusticeLeague-25m8.ttf">
+
+    <title>Formulaire du genre</title>
+
+</head>
+
+<!-- ____________________________________________ Début du BODY _______________________________________________________________ -->
+
+<body class="bg-dark text-white">
+
+
+<!-- ______________________________________________Section photo identité____________________________________________________________________________________ -->
+
+    <div class="container mt-5 mb-5">
+        <form name="formValidation" id="formValidation" action="#">
+
+            <div class="row ">
+
+                <div class="col-md-6 text-center border" id="preview">                                                   
+                    <img class="img-fluid rounded-2" src="img/noimage.png" id="imagePreview" alt="No image available">  <!--Affichage photo --> 
+                </div>
+                <div class="col-md-6 border">
+                    <label for="photo" class="form-label">Charger une photo</label> <br>                      <!--Chargement de la photo -->       
+                    <input type="file" id="photo" name="photo" class="bg-info border img-fluid">
+                </div>
+
+            </div>
+<!-- _______________________________________________________________________________________________________________________ -->
+
+
+
+
+            <h2 class="mt-5">QUI ETES VOUS ?</h2>         <!--Titre H2 -->
+
+
+
+<!--_____________________________ Champs de saisie NOM, PRENOM, DATE DE NAISSANCE, ADRESSE EMAIL ___________________________ -->
+
+<!--************************************************* Champs pour le NOM *************************************** -->
+
+            <div class="row">
+                <label for="nameInput" class="col-md-6 border p-4">Nom :</label>
+                <div class="col-md-6 border p-4">
+                    <input type="text" name="nom" id="nom" class="form-control" placeholder="Entrez votre nom..."
+                        required>
+                </div>
+            </div>
+
+<!--************************************************* Champs pour le PRENOM *************************************** -->
+
+            <div class="row">
+                <label for="nameInput" class="col-md-6 border p-4">Prénom :</label>
+                <div class="col-md-6 border p-4">
+                    <input type="text" name="prenom" id="prenom" class="form-control"
+                        placeholder="Entrez votre prénom..." required>
+                </div>
+            </div>
+
+<!--************************************************* Champs pour la DATE DE NAISSANCE *************************************** -->
+
+            <div class="row">
+                <label for="nameInput" class="col-md-6 border p-4">Date de naissance :</label>
+                <div class="col-md-6 border p-4">
+                    <input type="text" name="date" id="date" class="form-control"
+                        placeholder="Entrez votre date de naissance..." required>
+                </div>
+            </div>
+
+<!--************************************************* Champs pour l'adresse EMAIL *************************************** -->
+
+            <div class="row">
+                <label for="nameInput" class="col-md-6 border p-4">Email :</label>
+                <div class="col-md-6 border p-4">
+                    <input type="email" name="email" id="email" class="form-control"
+                        placeholder="Entrez votre adresse mail..." required>
+                </div>
+            </div>
+
+<!-- ______________________________________________________________________________________________________________________ -->
+
+
+
+            <h2 class="mt-5">QUELLE EST VOTRE GENRE ?</h2>     <!--Titre H2 -->   
+
+
+
+<!-- _____________________________________________Section pour le Sélecteur de genre ________________________________________ -->
+
+
+            <div class="row">
+                <div class=" border p-4">
+
+<!--************************************************* Bouton Sélecteur FEMME *************************************** -->
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genre" id="female" value="Femme" checked>
+                    <label class="form-check-label" for="female">Femme</label>
+                </div>
+
+<!--************************************************* Bouton Sélecteur HOMME *************************************** -->
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genre" id="male" value="Homme">
+                    <label class="form-check-label" for="male">Homme</label>
+                </div>
+
+<!--************************************************* Bouton Sélecteur MARTIEN *************************************** -->
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genre" id="martian" value="Martien">
+                    <label class="form-check-label" for="martian">Martien</label>
+                </div>
+
+<!--************************************************* Bouton Sélecteur INCONNUE *************************************** -->
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genre" id="other" value="Inconnue">
+                    <label class="form-check-label" for="other">Inconnue</label>
+                </div>
+
+
+
+            </div>
+            </div>
+
+<!-- _________________________________________Bouton CONFIRMER et ANNULER___________________________________________________ -->
+
+            <div class="row">
+                <div class="border text-center col-md-6 p-4">
+                    <button type="submit" class="btn btn-primary ">Confirmer</button>
+                </div>
+                <div class="border text-center col-md-6 p-4">
+                    <button type="reset" class="btn btn-danger ">Annuler</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    </div>
+
+    <!-- _________________________________________Script___________________________________________________________ -->
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

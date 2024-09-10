@@ -1,0 +1,30 @@
+
+
+@font-face {
+    font-family: 'JusticeLeague';                                  /*____ Police d'écriture ________ */
+    src: url(JusticeLeague-25m8.ttf) format('truetype');
+}
+
+
+h2 {
+    color: antiquewhite;                                        /*____ Propriété titre H2 ________ */
+    font-family: 'JusticeLeague';
+    padding: 20px;
+}
+
+label.error {
+    color: red;                                                 /*____ Couleur rouge pour le message d'erreur (champs compris dans <label>) ________ */
+    font-size: 1em;
+}
+
+.invalid-feedback {
+    display: block;                                               
+    color: red;
+}
+
+#imagePreview {
+    width: 250px;                                                  /* Propriété d'affichage pour la photo d'identité */
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
